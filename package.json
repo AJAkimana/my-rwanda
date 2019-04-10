@@ -1,0 +1,25 @@
+{
+  "name": "my-rwanda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJAkimana/my-rwanda.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "masks",
+    "javascript"
+  ],
+  "author": "Akimana Jean dAmour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AJAkimana/my-rwanda/issues"
+  },
+  "homepage": "https://github.com/AJAkimana/my-rwanda#readme"
+}
