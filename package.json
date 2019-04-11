@@ -4,6 +4,7 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "babel ./src -d ./lib",
     "lint": "eslint ./src",
     "test": "nyc mocha --require babel-core/register"
