@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+before_deploy:
+- npm run build
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: akimanaja17@gmail.com
+  api_key:
+    secure: KSvOW2zbV3GtCI98iggip7xXqA9rLPXncB+LW81TBkqm5f+FYfjuoSydFsdmlsKP6/e5F7rJzHkSWk5YSuATU8RO11m5O3iqxoOhU+hMpVHsWMw2Q/LsmJVLaT3sbIoiO4MxvyYp/sCyMXcveemeZk/qVeVVxBZZ49+mDCjABiNrEmfD2rJgFLTuIgqVC+1mN3+be2Pbnqn4fGRWgT1N44Srv8algm3OcW0gUrPpebBoUJOGeB99m8UGDmESGYyTOC4aUSab8OEeNgbgRMIlXYYajvYfLkbfC7AuszZhJTZfZeRWhkZACR1nUxWn+SSFaIiLuOZ5FeuiJTsUEXk6oKtZFVRiMXBz8C4rwxYlFTtZOrv0Sr9PuxZnhTPWOLfk6fKe5obCzGiSuySa18HcYDjU7RTUtlkvp7tzlXeZaju+yNFz/w5x5MEVX9RonwHw1YuRm/4PUI/mvtrZSDGh9CiVe+s+hCC/MpnZcTalRcSpDtdvlxMnxMsAeUVJRgE7boAWXCUIX0BBFAcc0Ebv1OwOE2Qy3CczQ7pxPsG5DW8ykGRpaE92v9z+q5Ek1ppg9vAyxvVRaOqJVFVyvspbJ1a1+whySYEgFC083kqxTRRQKA7IDKnL/4sC/zLpZc4t5CHIRezmF3NbWujQ7h6/IjDsq4ro+dSAY7BezoA4WPM=
+  on:
+    tags: true
+    repo: AJAkimana/my-rwanda
