@@ -6,7 +6,13 @@
   "scripts": {
     "build": "babel ./src -d ./lib",
     "lint": "eslint ./src",
-    "test": "mocha --require babel-core/register"
+    "test": "nyc mocha --require babel-core/register"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
   },
   "repository": {
     "type": "git",
@@ -30,9 +36,12 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "mocha": "^6.1.2"
+    "mocha": "^6.1.2",
+    "nyc": "^13.3.0"
   },
   "standard": {
-    "env": [ "mocha" ]
+    "env": [
+      "mocha"
+    ]
   }
 }
